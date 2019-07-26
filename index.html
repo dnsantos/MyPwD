@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css\style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header>
+            <!-- Cabeçalho -->
+            
+            <h1>MiPwD</h1>
+            
+        </header>
+
+        <section>
+            <div class="gererator-input strong">
+                <div class="password"></div>
+                <span class="indicator hide-with-timeout strong show-with-timeout"></span>
+                <div class="control-buttons hide-with-timeout show-with-timeout">
+                    <div class="generate-icon"></div>
+                    <a class="pam-button primary mini" title="Copiado">Copiar</a>
+                </div>
+            </div>
+
+            <div class="length-settings">
+                <label for="length" class="tamanho">Tamanho da senha: </label>
+                <input type="text" id="display" value="1" oninput="vol.value=value" onchange="vol.value=value">
+                <div class="button minus unselectable disabled"></div>
+                <input type="range" id="vol" name="vol" value="1" min="1" max="100" oninput="display.value=value" onchange="display.value=value">
+                <div class="button plus unselectable"></div>             
+            </div>
+
+            <div class="complexity-settings">
+                <label class="first">Caracteres utilizados: </label>
+                
+                <label for="uppercase" class="checkbox-label">ABC
+                    <input id="uppercase" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label for="lowercase" class="checkbox-label">abc
+                    <input id="lowercase" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label for="numbers" class="checkbox-label">123
+                    <input id="numbers" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label for="specilas" class="checkbox-label last">#$&amp;
+                    <input id="specilas" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </section>
+
+        <footer>
+            <!-- Rodapé -->
+            <h3>Project developed by dnsantos</h3>
+        </footer>
+    </main>
+</body>
+</html>
